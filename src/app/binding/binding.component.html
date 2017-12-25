@@ -1,0 +1,28 @@
+<hr>
+<p style="text-align:center">
+  binding works!
+</p>
+
+<!-- used to display content in directive tags -->
+
+<ng-content></ng-content>
+<br><br>
+
+<!-- property binding -->
+
+<input [value]='myTaste'/>
+<input required='{{myTaste}}'/>
+
+<!-- event binding -->
+
+<button (click)="display()">Click</button>
+
+<!-- two way binding -->
+<br>
+<label>Name:</label>
+<input [(ngModel)] = "student.name" />
+<br>
+<label>Roll:</label>
+<input [(ngModel)] = "student.roll" />
+<br>{{student.name}}
+<br>{{student.roll}}
